@@ -21,8 +21,8 @@ module.exports = configure(function (/* ctx */) {
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
     boot: [
-      
-      
+
+
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
@@ -60,7 +60,9 @@ module.exports = configure(function (/* ctx */) {
 
       // publicPath: '/',
       // analyze: true,
-      // env: {},
+      // env: {
+      //   VITE_API_URL: process.env.VITE_API_URL || 'https://blank-url.com'
+      // },
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,

@@ -7,3 +7,12 @@ declare namespace NodeJS {
     VUE_ROUTER_BASE: string | undefined;
   }
 }
+
+declare global {
+  // Extend the Window interface to include __VITE_API_URL__
+  interface Window {
+    VITE_API_URL: string;
+    API_URL: string;
+  }
+}
+export{}

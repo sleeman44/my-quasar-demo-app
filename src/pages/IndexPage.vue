@@ -1,5 +1,9 @@
 <template>
   <q-page class="row items-center justify-evenly">
+    <div>
+      <p>VITE_API_URL: {{ apiUrl }}</p>
+      <p>Quasar + Vite + Vue + Quasar</p>
+    </div>
     <example-component
       title="Example component"
       active
@@ -17,6 +21,8 @@ import ExampleComponent from 'components/ExampleComponent.vue';
 defineOptions({
   name: 'IndexPage'
 });
+// Access the runtime-injected environment variable
+const apiUrl = ref(window.API_URL);
 
 const todos = ref<Todo[]>([
   {
